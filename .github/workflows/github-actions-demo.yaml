@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This job was autmatically triggered"
-      - name: List files in repo
-        run: ls ${{ github.workspace }}
+      - name: Workspace name
+        run: echo "workspace: ${{ github.workspace }}"
       - name: Job status
-        run: ls ${{ job.status }}
+        run: echo "Job status: ${{ job.status }}"

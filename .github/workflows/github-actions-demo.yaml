@@ -6,6 +6,6 @@ jobs:
     steps:
       - run: echo "This job was autmatically triggered"
       - name: Workspace name
-        run: echo "workspace: ${{ github.workspace }}"
+        run: echo "workspace ${{ github.workspace }}"
       - name: Job status
-        run: echo "Job status: ${{ job.status }}"
+        run: echo "Job status ${{ job.status }}"

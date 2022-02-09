@@ -1,0 +1,11 @@
+name: Github Actions Demo
+on: [push]
+jobs:
+  Explore-Github-Actions: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job was autmatically triggered"
+      - name: List files in repo
+        run: ls ${{ github.workspace }}
+      - name: Job status
+        run: ls ${{ job.status }}
